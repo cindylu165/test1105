@@ -13,7 +13,7 @@ if (isset($_GET['boss'])){
 } else {
 	$bossMode=0;
 }
-// 123
+
 if ($bossMode) {
 	$sql = "select *, TIME_TO_SEC(TIMEDIFF(NOW(), addTime)) diff from todo order by status, urgent desc;";
 } else {
